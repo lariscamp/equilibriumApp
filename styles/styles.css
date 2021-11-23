@@ -1,0 +1,119 @@
+/* fontes */
+@font-face {
+    font-family: 'Outfit';
+    src: url('../styles/assets/fonts/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit Regular';
+    src: url('../styles/assets/fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url('../styles/assets/fonts/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit Light';
+    src: url('../styles/assets/fonts/Outfit-Light.ttf');
+}
+
+/* Estilo da página */
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width: 20em;
+    height: 33em;
+    border: solid transparent 3px;
+    border-radius: 1.2em;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.card__img{
+    max-width: 85%;
+    margin: 1.5em 0 0 1.5em;
+    border-radius: 0.6em;
+    cursor:pointer;
+}
+
+.card__h1{
+    font-family: 'Outfit Regular', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    margin: 1.2em 1.5em;
+    cursor: pointer;
+}
+
+.card__paragraph{
+    font-family: 'Outfit Regular', sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    margin: 1.2em 1.5em;
+}  
+
+.container__span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.span__eth{
+    font-family: 'Outfit Bold', sans-serif;
+    color: hsl(178, 51%, 40%);
+    font-weight: bolder;
+}
+
+.span__days{
+    font-family: 'Outfit Regular', sans-serif;
+    color:hsl(215, 51%, 70%)
+}
+
+.card__hr{
+    width: 80%;
+    border-color: hsl(215, 51%, 70%);
+}
+
+.card__avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em 0 2em 0;
+    color: hsl(0, 0%, 100%)
+}
+
+.avatar__picture{
+    max-width: 2em;
+    border: solid hsl(0, 0%, 100%) 2px;
+    border-radius: 5em;
+}
+
+.span__avatar{
+    font-family: 'Outfit Regular', sans-serif;
+    color:hsl(215, 51%, 70%)
+}
+
+a{
+    font-family: 'Outfit Regular', sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
