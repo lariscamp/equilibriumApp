@@ -1,22 +1,22 @@
 /* fontes */
 @font-face {
     font-family: 'Outfit';
-    src: url('Outfit-VariableFont_wght.ttf');
+    src: url('../styles/assets/fonts/Outfit-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Outfit Regular';
-    src: url('Outfit-Regular.ttf');
+    src: url('../styles/assets/fonts/Outfit-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Outfit Bold';
-    src: url('Outfit-Bold.ttf');
+    src: url('../styles/assets/fonts/Outfit-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Outfit Light';
-    src: url('Outfit-Light.ttf');
+    src: url('../styles/assets/fonts/Outfit-Light.ttf');
 }
 
 /* Estilo da página */
@@ -25,15 +25,22 @@
 }
 
 body{
-    background-color: hsl(217, 54%, 11%)
+    background-color: hsl(217, 54%, 11%);
 }
 
 .card{
     background-color: hsl(216, 50%, 16%);
     width: 20em;
     height: 33em;
-    border: solid red 3px;
+    border: solid transparent 3px;
     border-radius: 1.2em;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
 }
 
 .card__img{
@@ -43,12 +50,8 @@ body{
     cursor:pointer;
 }
 
-.card__img:hover{
-    box-shadow: hsl(178, 100%, 50%);
-}
-
 .card__h1{
-    font-family: Outfit-Bold, sans-serif;
+    font-family: 'Outfit Regular', sans-serif;
     color: hsl(0, 0%, 100%);
     font-size: 18px;
     margin: 1.2em 1.5em;
@@ -56,6 +59,7 @@ body{
 }
 
 .card__paragraph{
+    font-family: 'Outfit Regular', sans-serif;
     color: hsl(215, 51%, 70%);
     font-weight: lighter;
     margin: 1.2em 1.5em;
@@ -69,11 +73,19 @@ body{
 }
 
 .span__eth{
+    font-family: 'Outfit Bold', sans-serif;
     color: hsl(178, 51%, 40%);
+    font-weight: bolder;
 }
 
 .span__days{
+    font-family: 'Outfit Regular', sans-serif;
     color:hsl(215, 51%, 70%)
+}
+
+.card__hr{
+    width: 80%;
+    border-color: hsl(215, 51%, 70%);
 }
 
 .card__avatar{
@@ -92,10 +104,12 @@ body{
 }
 
 .span__avatar{
+    font-family: 'Outfit Regular', sans-serif;
     color:hsl(215, 51%, 70%)
 }
 
 a{
+    font-family: 'Outfit Regular', sans-serif;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     cursor: pointer;
